@@ -51,7 +51,12 @@ p = psutil.Process(Id)
 
 #doubleDictionaryList, triDictionaryList, allTokenList = dictionaryBuilder(Andriod_format, 'TestLogs/Android_100M.log', Andriod_Regex)
 #tokenMatch(allTokenList,doubleDictionaryList,triDictionaryList,15,10,'Output/')
-OnlineParser(Andriod_format, 'TestLogs/Android_100M.log', Andriod_Regex, 15, 10, 'Output/')
+# OnlineParser(Andriod_format, 'TestLogs/Android_100M.log', Andriod_Regex, 15, 10, 'Output/')
+start = time.perf_counter()
+OnlineParser(Andriod_format, 'TestLogs/Android.log', Andriod_Regex, 15, 10, 'Output/')
+end = time.perf_counter()
+interval = end - start
+print("spent time {}".format(interval))
 
 print(p.cpu_times())
 print(p.memory_full_info())

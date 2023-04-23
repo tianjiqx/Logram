@@ -88,6 +88,16 @@ def OnlineParser(log_format, logFile, rex, doubleThreshold, triThreshold, outAdd
             outFile.write(logEvent);
             outFile.write('\n');
 
+    # 统计一下词典大小
+    print(" doubleDictionaryList count {} triDictionaryList count {}".format(len(doubleDictionaryList.keys()), len(triDictionaryList.keys())))
+    dkeysize = 0
+    tkeysize = 0
+    for k in doubleDictionaryList.keys():
+        dkeysize += len(k)
+    for k in triDictionaryList.keys():
+        tkeysize += len(k)
+    print(" doubleDictionaryList len {} triDictionaryList len {} total {} ".format(dkeysize, tkeysize, dkeysize+tkeysize))
+
     templateFile.write('EventTemplate,Occurrences')
     templateFile.write('\n')
     for template in templateTable.keys():

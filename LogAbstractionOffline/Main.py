@@ -43,7 +43,7 @@ Proxifier_Regex = [r'<\d+\ssec', r'([\w-]+\.)+[\w-]+(:\d+)?', r'\d{2}:\d{2}(:\d{
 doubleDictionaryList, triDictionaryList, allTokenList = dictionaryBuilder(BGL_format, 'TestLogs/BGL_500M.log', BGL_Regex)
 print(len(doubleDictionaryList))
 print(len(triDictionaryList))
-#tokenMatch(allTokenList,doubleDictionaryList,triDictionaryList,15,10,'Output/')
+# tokenMatch(allTokenList,doubleDictionaryList,triDictionaryList,15,10,'Output/')
 # evaluate('GroundTruth/HDFS_2k.log_templates.csv', 'Output/template.csv')
 
 #Parameters
