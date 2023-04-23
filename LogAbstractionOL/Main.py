@@ -63,3 +63,15 @@ print(p.memory_full_info())
 
 #Parameters
 #HDFS: 15, 10
+
+
+"""
+// Android  online 155,5005 rows 183MB
+
+doubleDictionaryList count 114021 triDictionaryList count 143145
+doubleDictionaryList len 4777586 triDictionaryList len 7446683 total 12224269 
+spent time 102.335043099
+pcputimes(user=97.724899328, system=2.015824896, children_user=0.0, children_system=0.0)
+pfullmem(rss=25792512, vms=34978627584, pfaults=168322, pageins=53, uss=19206144)
+
+"""

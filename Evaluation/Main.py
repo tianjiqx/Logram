@@ -161,8 +161,8 @@ settings = {
     },
 }
 
-for key in ['HealthApp_2k']:
-# for key in settings.keys():
+# for key in ['HealthApp_2k']:
+for key in settings.keys():
     name = key
     log_format=settings[key]['log_format']
     rex = settings[key]['rex']
